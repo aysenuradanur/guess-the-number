@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Number Game</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main>
+        <h1>Guess the Number Game</h1>
+        <h3 class="interval">(Enter a number between <span class="down">1</span> - <span class="up">100</span>)</h3>
+        <!-- spans for later manipulation -->
+
+        <div class="input-box">
+            <input type="number" name="guess-number" id="guess-number" min="1" max="100" >
+            <button id="guess-btn">Guess</button>
+        </div>
+
+        <label class="report">Make a guess!</label>
+        <label>Remaining guesses: <span class="attempts">10</span></label>
+
+        <button class="reset" id="reset-btn">Play Again</button>
+
+    </main>
+    <script src="./index.js"></script>
+</body>
+</html>
